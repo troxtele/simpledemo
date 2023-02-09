@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Group_28" data-name="Group 28" transform="translate(-242 -2800)">
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="12.5" cy="12.5" r="12.5" transform="translate(242 2800)" fill="#11373a"/>
+    <path id="Icon_awesome-eye" data-name="Icon awesome-eye" d="M13.99,8.835A7.838,7.838,0,0,0,7.038,4.5,7.839,7.839,0,0,0,.085,8.835a.791.791,0,0,0,0,.713,7.838,7.838,0,0,0,6.953,4.335A7.839,7.839,0,0,0,13.99,9.548.791.791,0,0,0,13.99,8.835ZM7.038,12.711a3.519,3.519,0,1,1,3.519-3.519A3.519,3.519,0,0,1,7.038,12.711Zm0-5.865a2.329,2.329,0,0,0-.618.093A1.169,1.169,0,0,1,4.784,8.573,2.341,2.341,0,1,0,7.038,6.846Z" transform="translate(247 2803.5)" fill="#fcfcfc"/>
+  </g>
+</svg>
