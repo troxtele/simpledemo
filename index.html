@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bonobo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.cdnfonts.com/css/clash-display"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link href="./dist/output.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="text-base bg-[#F9F5EA]">
+    <section class="hidden">
+      <!-- navbar -->
+      <div class="wrapper max-w-screen-xl">
+        <!-- mobile nav bar -->
+        <nav class="backdrop-blur-sm">
+          <div class="sm:hidden flex justify-between p-2">
+            <div class="flex space-x-4">
+              <div>
+                <img
+                  src="./assets/images/index/logo_bonobo.png"
+                  alt=""
+                  class="w-[70%] h-[75%]"
+                />
+              </div>
+              <div class="block absolute right-1 justify-end items-right ml-4">
+                <button
+                  class="text-primary focus:outline-none mobile-menu-button"
+                >
+                  <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="hidden mobile-menu font-archivo font-bold capitalize text-center"
+          >
+            <a href="#" class="block py-1 px-4 text-sm hover:bg-tan">shop</a>
+            <a href="#" class="block py-1 px-4 text-sm hover:bg-tan">inside</a>
+            <a href="#" class="block py-1 px-4 text-sm hover:bg-tan"
+              >take quiz</a
+            >
+          </div>
+        </nav>
+        <!-- /mobile nav bar -->
+        <!-- /desktop nav bar -->
+        <nav
+          class="fixed top-0 w-full sm:flex items-center justify-center py-6 hidden backdrop-blur-sm z-50"
+        >
+          <div class="flex items-center">
+            <div class="link font-archivo font-bold capitalize">
+              <a href="#shop" class="xl:mx-10 lg:mx-8 mx-3">shop</a>
+              <a href="#inside" class="xl:mx-10 lg:mx-8 mx-3">inside</a>
+              <a href="#quiz" class="xl:mx-10 lg:mx-8 mx-3">take quiz</a>
+            </div>
+            <a href="#index"
+              ><img
+                src="./assets/images/index/logo_bonobo.png"
+                class="lg:h-10 lg:w-36 sm:h-8 sm:w-28 lg:mx-16 mx-6"
+            /></a>
+            <div class="link font-archivo font-bold capitalize">
+              <a href="#story" class="xl:mx-10 lg:mx-8 mx-3">our story</a>
+              <a href="#blog" class="xl:mx-10 lg:mx-8 mx-3">blog</a>
+              <a href="#cart" class="xl:mx-10 lg:mx-8 mx-3">cart</a>
+            </div>
+          </div>
+        </nav>
+        <!-- /desktop nav bar -->
+      </div>
+      <!-- index page-->
+      <section class="main relative overflow-hidden">
+        <div class="container">
+          <div class="wrapper flex justify-center items-center">
+            <!-- mountains -->
+            <div class="mounten absolute left-0 right-0 bottom-0">
+              <img
+                class="w-full"
+                src="./assets/images/index/bg-banner.png"
+                alt=""
+              />
+            </div>
+            <!-- content -->
+            <div
+              class="content h-full w-full flex flex-col justify-end items-center gap-16 absolute bottom-[20%] text-center"
+            >
+              <!-- Header -->
+              <h1
+                class="text-primary font-bold leading-tight sm:leading-tight md:leading-tight lg:leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl heading sec_one"
+              >
+                Regain your <br />
+                confidence back.
+              </h1>
+              <!-- buttons -->
+              <div
+                class="btns flex justify-center items-center gap-12 flex-wrap"
+              >
+                <!-- btn -->
+                <a
+                  href="#"
+                  class="flex justify-center items-center gap-4 md:gap-8 backdrop-blur-2xl transition duration-300 hover:bg-tan hover:border-tan bg-white/30 rounded-full border border-white px-6 py-2 sec_one"
+                >
+                  <div class="logo">
+                    <img
+                      src="./assets/images/index/quiz.svg"
+                      class="inline-block h-10 w-10"
+                    />
+                  </div>
+                  <span class="text-lg font-semibold">Take the quiz</span>
+                  <img
+                    src="./assets/images/index/arrow-right.svg"
+                    class="inline-block h-5 w-5"
+                  />
+                </a>
+                <!-- btn -->
+                <a
+                  href="#"
+                  class="flex justify-center items-center gap-4 md:gap-8 backdrop-blur-2xl transition duration-300 hover:bg-tan hover:border-tan bg-white/30 rounded-full border border-white px-6 py-2 sec_one"
+                >
+                  <img
+                    src="./assets/images/index/shop.svg"
+                    class="inline-block h-10 w-10"
+                  />
+                  <span class="text-lg font-semibold">Shop now</span>
+                  <img
+                    src="./assets/images/index/arrow-right.svg"
+                    class="inline-block h-5 w-5"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section
+      class="hidden bg-[url('./assets/images/inside/bg-banner.png')] bg-cover bg-no-repeat"
+    >
+      <!-- inside page-->
+      <section class="wrapper w-full">
+        <!-- mockup -->
+        <!-- mockup top-left -->
+        <div
+          class="absolute w-[13rem] left-10 top-4 left_bottle duration-[1200ms]"
+        >
+          <img
+            class="h-full w-full object-contain"
+            src="./assets/images/inside/produk3@2x.png"
+          />
+        </div>
+        <!-- mockup top-left -->
+        <!-- mockup top-right -->
+        <div
+          class="absolute w-[13rem] right-10 top-4 right_bottle duration-[1200ms]"
+        >
+          <img
+            class="h-full w-full object-contain"
+            src="./assets/images/inside/produk1@2x.png"
+          />
+        </div>
+        <!-- mockup top-right -->
+        <!-- mockup bottom-right -->
+
+        <!-- Bottom Bottles -->
+        <!-- left -->
+        <div
+          class="absolute w-[13rem] left-10 -bottom-20 right_bottle duration-[1200ms]"
+        >
+          <img
+            class="h-full w-full object-contain"
+            src="./assets/images/inside/produk2@2x.png"
+          />
+        </div>
+        <!-- right -->
+        <div
+          class="absolute w-[24rem] right-10 -bottom-20 right_bottle duration-[1200ms]"
+        >
+          <img
+            class="h-full w-full object-contain"
+            src="./assets/images/inside/produk4@2x.png"
+          />
+        </div>
+
+        <!-- right -->
+
+        <!-- content -->
+        <div
+          class="content h-full w-full flex flex-col justify-end items-center gap-16 absolute bottom-[20%] text-center"
+        >
+          <!-- Header -->
+          <h2
+            class="text-primary font-bold leading-tight sm:leading-tight md:leading-tight lg:leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl w-full transition duration-[1300ms] magic font-clashdisplay"
+          >
+            No magic, <br />
+            only science.
+          </h2>
+          <p
+            class="font-semibold font-archivo text-center text-lg max-w-[40rem] magic transition duration-[1300ms] magic"
+          >
+            All of our medications are registered and prescribed by licensed
+            doctors. 100% online and delivered discreetly.
+          </p>
+          <!-- buttons -->
+          <div class="btn flex justify-center items-center gap-12 flex-wrap">
+            <!-- btn -->
+            <a
+              href="#"
+              class="flex justify-center items-center gap-4 md:gap-8 backdrop-blur-2xl transition hover:bg-tan hover:border-tan bg-white/30 rounded-full border border-white px-6 py-2 magic duration-[1300ms]"
+            >
+              <img
+                src="./assets/images/index/shop.svg"
+                class="inline-block h-10 w-10"
+              />
+              <span class="text-lg font-semibold">See what inside</span>
+              <img
+                src="./assets/images/index/arrow-right.svg"
+                class="inline-block h-5 w-5"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- inside page-->
+    </section>
+    <!-- Quiz Section -->
+    <section class="z-30 w-full">
+      <div class="container">
+        <div
+          class="wrapper h-full flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <!-- Left -->
+          <div class="left grid gap-4 text-center md:text-left">
+            <div
+              class="heading text-5xl md:text-6xl lg:text-7xl font-bold text-primary max-w-[30rem]"
+            >
+              <h2 class="font-clashdisplay">All for him and her</h2>
+            </div>
+            <!-- para -->
+            <p class="text-slate-900 max-w-[30rem] text-base font-semibold">
+              Browse our product based on your preferences. Don't worry, our
+              product available for both male and female.
+            </p>
+          </div>
+          <!-- right -->
+          <div class="right flex gap-6">
+            <div class="woman max-w-[20rem]">
+              <img src="./assets/images/quiz/female.png" alt="" />
+            </div>
+            <div class="man max-w-[20rem]">
+              <img src="./assets/images/quiz/male.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section class="text-center">
+      <div class="container">
+        <div class="wrapper flex flex-col gap-16">
+          <!-- Top -->
+          <div class="top flex flex-col justify-center items-center gap-8">
+            <!-- heading -->
+            <h2
+              class="text-5xl sm:text-6xl lg:text-7xl font-bold font-clashdisplay text-primary"
+            >
+              Knowledge is power
+            </h2>
+            <!-- para -->
+            <p class="text-slate-900 max-w-[35rem] text-base font-semibold">
+              Get latest articles for healthcare, tips and knowledge about
+              personal care. Everything is crafted by our experienced team and
+              panel doctors.
+            </p>
+          </div>
+          <!-- Botton -->
+          <div class="bottom">
+            <!-- items -->
+            <div
+              class="items text-start grid justify-between sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            >
+              <!-- item -->
+              <div class="item grid gap-5">
+                <img class="" src="./assets/images/blog/blog-1.png" alt="" />
+                <div class="texts flex flex-col gap-4">
+                  <h4 class="text-2xl font-bold">Fire Up Your Motivation</h4>
+                  <p class="text-stone-500 max-w-[25rem] font-normal">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Integer in sapien. Nullam dapibus fermentum ipsum. Class
+                    aptent taciti sociosqu.
+                  </p>
+                  <div class="name">
+                    <h6 class="text-xl font-semibold">dr. muhamad reze</h6>
+                    <div class="date text-stone-500">10th Oct 2022</div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item grid gap-5">
+                <img class="" src="./assets/images/blog/blog-2.png" alt="" />
+                <div class="texts flex flex-col gap-4">
+                  <h4 class="text-2xl font-bold">Fire Up Your Motivation</h4>
+                  <p class="text-stone-500 max-w-[25rem] font-normal">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Integer in sapien. Nullam dapibus fermentum ipsum. Class
+                    aptent taciti sociosqu.
+                  </p>
+                  <div class="name">
+                    <h6 class="text-xl font-semibold">dr. muhamad reze</h6>
+                    <div class="date text-stone-500">10th Oct 2022</div>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="item grid gap-5">
+                <img class="" src="./assets/images/blog/blog-3.png" alt="" />
+                <div class="texts flex flex-col gap-4">
+                  <h4 class="text-2xl font-bold">Fire Up Your Motivation</h4>
+                  <p class="text-stone-500 max-w-[25rem] font-normal">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Integer in sapien. Nullam dapibus fermentum ipsum. Class
+                    aptent taciti sociosqu.
+                  </p>
+                  <div class="name">
+                    <h6 class="text-xl font-semibold">dr. muhamad reze</h6>
+                    <div class="date text-stone-500">10th Oct 2022</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- view all -->
+            <a
+              href="#"
+              class="flex gap-4 text-primary font-semibold mt-16 text-xl justify-center"
+            >
+              View more article
+              <span><i class="fa-solid fa-arrow-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section -->
+    <section>
+      <div class="container">
+        <div class="wrapper flex flex-col sm:flex-row justify-between gap-6 items-center">
+          <!-- left -->
+          <div class="left">
+            <h2
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold max-w-[26rem] font-clashdisplay"
+            >
+              Subscribe to our newsletter
+            </h2>
+          </div>
+          <!-- Right -->
+          <div class="right w-full max-w-[30rem]">
+            <form>
+              <label
+                for="search"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only"
+                >Search</label
+              >
+              <div class="relative">
+                <div
+                  class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                ></div>
+                <input
+                  type="search"
+                  class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-blue-500"
+                  placeholder="Your email address"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="absolute text-white right-2.5 bottom-2.5 bg-primary transition duration-300 focus:ring-2 focus:outline-none font-medium rounded-full text-sm px-4 py-2"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16">
+      <div class="container border-b border-slate-900/70">
+        <div class="wrapper flex flex-col justify-center items-center">
+          <!-- Top -->
+          <div class="top w-full flex sm:block justify-center max-w-[50rem]">
+            <ul class="flex sm:justify-around gap-7  flex-wrap">
+              <li><a href="#" class="font-semibold capitalize">Shop</a></li>
+              <li><a href="#" class="font-semibold capitalize">inside</a></li>
+              <li>
+                <a href="#" class="font-semibold capitalize">take quiz</a>
+              </li>
+              <li>
+                <a href="#" class="font-semibold capitalize">our story</a>
+              </li>
+              <li><a href="#" class="font-semibold capitalize">blog</a></li>
+              <li><a href="#" class="font-semibold capitalize">cart</a></li>
+            </ul>
+          </div>
+          <!-- content -->
+          <div
+            class="content py-10 flex flex-col justify-center gap-6 items-center"
+          >
+            <!-- logo -->
+            <img
+              class="max-w-[10rem]"
+              src="./assets/images/index/logo_bonobo.png"
+              alt=""
+            />
+            <p class="text-stone-500 max-w-[25rem] font-normal">
+              Lorem ipsum dolor sit amet
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="container mt-10 flex justify-center">
+        <p class="text-stone-500 max-w-[25rem] font-normal">
+          Copyright © 2023 Bonobo, All right reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- scrips -->
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.0/js/swiper.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- quiz page-->
+    <script>
+      /** mobile navbar */
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <!-- Script -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
